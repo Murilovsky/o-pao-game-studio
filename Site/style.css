@@ -1,0 +1,85 @@
+:root{
+    --azul-claro-pao:#181731;
+    --azul-escuro-pao:#070712;
+    --cinza-pao:#171516;
+    --amarelo-forte:#f8c53a;
+    --branco:#FFF;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: whitesmoke;
+}
+.container{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.cabecalho{
+    width: auto;
+    display: flex;
+    background-color: var(--cinza-pao);
+
+    align-content: center;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+}
+
+.logo{
+    size:75%;
+    size: 75%;
+}
+
+.navegacao{
+    margin-left: auto;
+    text-align: center;
+}
+.navegacao_lista{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.navegacao_item{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: var(--amarelo-forte);
+    transition: all 100ms;
+}
+.navegacao_item:hover{
+    transform: scale(110%);
+    color: var(--branco);
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+.sobre{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sobre_texto{
+    display: block;
+}
+.titulo{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.sobre_desc{
+    margin-top: 1.5rem;
+    font-size: 1.5rem ;
+    font-weight: 400;
+}
+.titulo:before{
+    content: '🎮 ';
+}
+.titulo:after{
+    content: ' 🍞';
+}
+
+.sobre_imagem{
+    width: 80%;
+}
