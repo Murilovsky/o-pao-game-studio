@@ -9,11 +9,14 @@
 }
 body{
     font-family: var(--fredoka);
-    background-color: lightgray;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+   /* background-color: lightgray; */
+   background-image: url("../imagens/MainMenuBG.png");
 }
 .container{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
     padding-left: 6%;
     padding-right: 6%;
 }
@@ -31,33 +34,33 @@ body{
 }
 .cabecalho_titulo{
     font-family: var(--roboto);
-    vertical-align: 80%;
+    vertical-align: 100%;
     padding-top: 1rem;
     margin-left: 1rem;
     display: inline;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--amarelo-forte);
 }
 
 .logo{
-    size:100%;
+    scale: 60%;
 }
 
 .navegacao{
-    margin-left: auto;
+    margin: auto;
+    margin-right: 0;
     text-align: center;
 }
 .navegacao_lista{
-    margin-top: 1rem;
     display: flex;
     flex-direction: row;
 }
 .navegacao_item{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 1rem;
+    margin:1rem;
     color: var(--amarelo-forte);
     transition: all 100ms;
 }
@@ -84,22 +87,47 @@ body{
     font-weight: 700;
 }
 .sobre_desc{
-    text-align: center;
     margin-top: 1.5rem;
-    font-size: 1.5rem ;
-    font-weight: 400;
 }
 .titulo:before{
-    content: '🎮 ';
+    content: '― ';
 }
 .titulo:after{
-    content: ' 🍞';
+    content: ' ―';
 }
 
 .sobre_imagem{
     width: 100%;
 }
 /*////////////////////////////////////////////////////////////////////////////////////*/
+
+.games_page{
+    padding: 2%;
+}
+.game{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.game_desc{
+    margin-bottom: 1rem;
+}
+.game_flag{
+    margin: auto 0;
+    width: 70%;
+}
+.game_titulo{
+    margin: 1rem;
+    font-family: var(--roboto);
+    font-size: 3rem;
+}
+.game_img{
+    border: solid white;
+    display: inline-block;
+    width: 100%;
+}
+/*///////////////////////////////////////////////////////////////////////////////////*/
 .time_titulo{
     text-align: center;
     font-size: 2.5rem;
@@ -110,9 +138,11 @@ body{
 .time_lista{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;   
+    justify-content: space-evenly;  
+    flex-wrap: wrap; 
 }
 .time_item{
+    margin: 2rem;
     text-align: center;
 }
 .time_name{
@@ -127,24 +157,27 @@ body{
 }
 .time_img{
     max-width: 15rem;
-    min-width: 10rem;
-    border: solid 0.5rem;
-    border-color: var(--azul-escuro-pao);
+    border: solid 0.25rem;
+    border-color: var(--branco);
     border-radius: 50%;
     margin-bottom: 1rem;
+    transition: all 300ms;
 }
+
 
 /*////////////////////////////////////////////////////////////////////////////////////*/
 
 .rodape{
+    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: var(--cinza-pao);
 }
 .rodape_img{
-    
-    scale: 50%;
+    margin: 1rem;
+    width: 20%;
+    height: auto;
 }
 .navegacao_item_rodape{
     font-family: var(--roboto);
