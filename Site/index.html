@@ -4,12 +4,16 @@
         <meta charset="UTF-8">
         <title>O Pão Game Studio|Home</title>
         <link href="reset.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <header class="cabecalho container">
-            <img class="logo" src="../Logo/OPãoLogoRedux.svg" alt="Logo do Pão Game Studio">
+            <div>
+                <img class="logo" src="../imagens/OPãoLogoRedux.svg" alt="Logo do Pão Game Studio">
+                <h1 class="cabecalho_titulo">O Pão Game Studio</h1>
+            </div>
+
             <nav class="navegacao">
                 <ul class="navegacao_lista">
                     <li class="navegacao_item"><a href="#">Home</a></li>
@@ -22,14 +26,61 @@
         </header>
 
         <main>
-            <section class="sobre">
+            <section class="sobre container">
                 <div class="sobre_texto container">
                     <h2 class="titulo">About Us</h2>
-                    <p class="sobre_desc">We are a small team game studio based in Brazil. Making amazing games to amazing people</p>
+                    <p class="sobre_desc">We are a small indie game studio formed by university friends, in Rio de Janeiro, Brazil. Making amazing games to amazing people</p>
                 </div>
                 <img class="sobre_imagem" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.startupdaily.net%2Fwp-content%2Fuploads%2F2013%2F12%2Fluxfon.com-18586.jpg%3Ffit%3D1920%252C1200%26ssl%3D1&f=1&nofb=1" alt="Linhas de Código">
             </section>
+            <section class="time container">
+                <h2 class="time_titulo">Our Team</h2>
+                <ul class="time_lista container">
+                    <li class="time_item">
+                        <img class="time_img" src="../imagens/ChiquitaAmorzão.png" alt="Murilo Pic">
+                        <h3 class="time_name">Murilo Gama</h3>
+                        <p class="time_cargo">Art Director/Tech Art</p>
+                    </li>
+                    <li class="time_item">
+                        <img class="time_img" src="../imagens/ChiquitaCansada.jpeg" alt="Amanda Pic">
+                        <h3 class="time_name">Amanda Valadares</h3>
+                        <p class="time_cargo">Game Artist/Concept Artist</p>
+                    </li>
+                    <li class="time_item">
+                        <img class="time_img" src="../imagens/ChiquitaConChiquita.jpeg" alt="McLovin Pic">
+                        <h3 class="time_name">João Lopes</h3>
+                        <p class="time_cargo">Lead Game Designer</p>
+                    </li>
+                    <li class="time_item">
+                        <img class="time_img" src="../imagens/ChiquitaFudida.png" alt="Giovanni Pic">
+                        <h3 class="time_name">Giovanni Figueiredo</h3>
+                        <p class="time_cargo">Gameplay Programmer</p>
+                    </li>
+                    <li class="time_item">
+                        <img class="time_img" src="../imagens/ChiquitaPan.jpeg" alt="Lux Pic">
+                        <h3 class="time_name">Lucas Queirolo</h3>
+                        <p class="time_cargo">Writer and Programmer</p>
+                    </li>
+                </ul>
+            </section>
         </main>
+
+        <footer class="rodape container">
+            <div>
+                <img class="rodape_img" src="../imagens/TucoP.gif" alt="Tuco Animation"> 
+                <img class="rodape_img" src="../imagens/BananaP.gif" alt="Banana Animation">                    
+            </div>
+            
+            <nav class="navegacao">
+                <ul class="navegacao_lista">
+                    <li class="navegacao_item_rodape"><a href="https://discord.gg/DKPPS36WHy">Discord</a></li>
+                    <li class="navegacao_item_rodape"><a href="https://twitter.com/OPaoGameStudio">Twitter</a></li>
+                    <li class="navegacao_item_rodape"><a href="mailto:opao.gamestudio@gmail.com">E-mail</a></li>
+                </ul>
+                <p class="copyright">© O Pão Game Studio,2022</p>
+            </nav>
+            
+        </footer>
     </body>
   
 </html>
