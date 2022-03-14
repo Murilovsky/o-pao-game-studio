@@ -11,10 +11,15 @@ body{
     font-family: var(--fredoka);
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
    /* background-color: lightgray; */
    background-image: url("../imagens/MainMenuBG.png");
+}
+.logo_e_texto{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 .container{
     padding-left: 6%;
@@ -23,40 +28,43 @@ body{
 
 .cabecalho{
     margin-bottom: 1rem;
-    width: auto;
+    width: 100%;
     display: flex;
     background-color: var(--cinza-pao);
 
-    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 
     box-sizing: border-box;
 }
 .cabecalho_titulo{
     font-family: var(--roboto);
-    vertical-align: 100%;
     padding-top: 1rem;
     margin-left: 1rem;
     display: inline;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--amarelo-forte);
 }
 
 .logo{
-    scale: 60%;
+    height: 30%;
+    display: block;
 }
 
 .navegacao{
-    margin: auto;
-    margin-right: 0;
     text-align: center;
 }
 .navegacao_lista{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
 .navegacao_item{
+    padding: auto 0;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1rem;
@@ -96,6 +104,8 @@ body{
 .sobre{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 .sobre_texto{
     font-family: var(--roboto);
@@ -104,12 +114,12 @@ body{
 .titulo{
     font-family: var(--roboto);
     text-align: center;
-    margin-top: 1rem;
-    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-size: 2rem;
     font-weight: 700;
 }
 .sobre_desc{
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 ;
 }
 .titulo:before{
     content: '― ';
@@ -119,43 +129,55 @@ body{
 }
 
 .sobre_imagem{
-    width: 100%;
+    width: 100vw;
 }
 /*////////////////////////////////////////////////////////////////////////////////////*/
 
 .games_page{
+    color: black;
+    background-color: lightgray;
     padding: 2%;
 }
 .game{
-    margin-top: 2rem;
+    margin: 3rem 0 ;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 .game_desc{
+    display: none;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.game_desc_mobile{
+    font-weight: 300;
     margin-bottom: 1rem;
 }
 .game_flag{
+    z-index: 1;
+    position: absolute;
     margin: auto 0;
     width: 70%;
 }
 .game_icon{
-    width: 15%;
+    display: none;
+    width: 30%;
 }
 .game_titulo{
     margin: 1rem;
     font-family: var(--roboto);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .game_img{
-    border: solid white;
+    z-index: 0;
     display: inline-block;
-    width: 100%;
+    width: 100vw;
+    opacity: 30%;
 }
 /*///////////////////////////////////////////////////////////////////////////////////*/
 .time_titulo{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: var(--roboto);
     font-weight: 700;
     margin-bottom: 1.25rem;
@@ -167,21 +189,23 @@ body{
     flex-wrap: wrap; 
 }
 .time_item{
-    margin: 2rem;
+    box-sizing: content-box;
+    margin: 1rem;
     text-align: center;
 }
 .time_name{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: var(--roboto);
     font-weight: 700;
     text-transform: uppercase;
 }
 .time_cargo{
-    font-size: 1.25rem;
+    
+    font-size: 1rem;
     font-weight: 300;
 }
 .time_img{
-    max-width: 15rem;
+    max-width: 100px;
     border: solid 0.25rem;
     border-color: var(--branco);
     border-radius: 50%;
@@ -215,4 +239,67 @@ body{
     display: inline;
     color: rgba(255, 255, 255, 0.5) ;
     font-weight: 300;
+}
+@media screen and (min-width:768px){
+    .sobre_imagem{
+        width: 100%;
+    }
+    .game_img{
+        border: solid white;
+        width: 100%;
+    }
+    .game_icon{
+        display: inline;
+        width: 15%;
+    }
+    .game_flag{
+        margin-top: 2rem;
+    }
+    .game_desc{
+        display: block;
+    }
+    .game_desc_mobile{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:1024px){
+    .logo_e_texto{
+        flex-direction: row;
+    }
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .sobre{
+        flex-wrap: nowrap;
+    }
+    .navegacao{
+        margin: auto;
+        margin-right: 0;
+    }
+    .logo{
+        height: 60%;
+        display: inline-block;
+    }
+    .cabecalho_titulo{
+        vertical-align: 100%;
+        font-size: 2.5rem;
+    }
+    .game_desc{
+        font-size: 1.5rem;
+    }
+    .game_img{
+        opacity: 100%;
+    }
+    .game_flag{
+        position: relative;
+        margin: auto 0;
+        width: 70%;
+    }
+    .time_img{
+        max-width: 220px;
+    }
+    .time_lista{
+        justify-content: space-evenly;
+    }
 }
