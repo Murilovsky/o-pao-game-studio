@@ -1,0 +1,44 @@
+.sobre{
+    padding-top :7rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.sobre_texto{
+    font-family: var(--roboto);
+    display: block;
+}
+.titulo{
+    font-family: var(--roboto);
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.sobre_desc{
+    margin: 1.5rem 0 ;
+}
+.titulo:before{
+    content: '― ';
+}
+.titulo:after{
+    content: ' ―';
+}
+
+.sobre_imagem{
+    width: 100vw;
+}
+@media screen and (min-width:768px) {
+    .sobre_imagem{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1024px) {   
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .sobre{
+        flex-wrap: nowrap;
+    }
+}

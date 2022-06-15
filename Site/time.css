@@ -1,0 +1,45 @@
+.time_titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+.time_lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+    flex-wrap: wrap; 
+}
+.time_item{
+    box-sizing: content-box;
+    margin: 1rem;
+    text-align: center;
+}
+.time_name{
+    font-size: 1.25rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.time_cargo{
+    
+    font-size: 1rem;
+    font-weight: 300;
+}
+.time_img{
+    max-width: 100px;
+    border: solid 0.25rem;
+    border-color: var(--branco);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: all 300ms;
+}
+@media screen and (min-width:1024px){
+    .time_img{
+        max-width: 220px;
+    }
+    .time_lista{
+        justify-content: space-evenly;
+    }
+}

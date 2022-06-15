@@ -1,0 +1,24 @@
+.rodape{
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--cinza-pao);
+}
+.rodape_img{
+    margin: 1rem;
+    width: 20%;
+}
+.navegacao_item_rodape{
+    font-family: var(--roboto);
+    color: rgba(255, 255, 255, 0.5) ;
+    margin: 1rem;
+    font-size: 1rem;
+}
+.copyright{
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    display: inline;
+    color: rgba(255, 255, 255, 0.5) ;
+    font-weight: 300;
+}
