@@ -9,12 +9,10 @@
 }
 
 .cabecalho{
-    z-index: 3;
     margin-bottom: 1rem;
     width: 100%;
     display: flex;
     background-color: var(--cinza-pao);
-    position:fixed;
 
     align-items: center;
     flex-wrap: wrap;
@@ -33,7 +31,7 @@
 }
 
 .logo{
-    height: 30%;
+    max-width: 70px;
     display: block;
 }
 
@@ -61,28 +59,6 @@
     color: var(--branco);
     text-decoration: double;
 }
-.botao{
-    font-family: var(--roboto);
-    font-size: 1.75rem;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.2);
-    border: solid 2px rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    border-radius: 5px;
-
-    transition: all 300ms;
-}
-.botao:hover{
-    scale: 120%;
-    color: white;
-    background-color: var(--azul-claro-pao);
-    border: solid 2px white;
-}
-.botao:active{
-    background-color: var(--amarelo-forte);
-    color: black;
-}
 @media screen and (min-width:1024px){
     .logo_e_texto{
         flex-direction: row;
@@ -98,5 +74,9 @@
     .cabecalho_titulo{
         vertical-align: 100%;
         font-size: 2.5rem;
+    }
+    .cabecalho{
+        position:fixed;
+        z-index: 3;
     }
 }

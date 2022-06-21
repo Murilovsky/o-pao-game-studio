@@ -4,21 +4,22 @@
         <meta charset="UTF-8">
         <title>O Pão Game Studio|Home</title>
         <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link href="Site/reset.css" rel="stylesheet">
+        <link href="./Site/css/reset.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="Site/style.css">
-        <link rel="stylesheet" href="Site/header.css">
-        <link rel="stylesheet" href="Site/sobre.css">
-        <link rel="stylesheet" href="Site/games.css">
-        <link rel="stylesheet" href="Site/time.css">
-        <link rel="stylesheet" href="Site/rodape.css">
-        <link href="imagens/OPãoLogoRedux.svg" rel="icon"
+        <link rel="stylesheet" href="./Site/css/style.css">
+        <link rel="stylesheet" href="./Site/css/header.css">
+        <link rel="stylesheet" href="./Site/css/sobre.css">
+        <link rel="stylesheet" href="./Site/css/games.css">
+        <link rel="stylesheet" href="./Site/css/time.css">
+        <link rel="stylesheet" href="./Site/css/rodape.css">
+        <link href="imagens/OPãoLogoRedux.svg" rel="icon">
+        
     </head>
     <body>
         <header class="cabecalho container">
             <div class="logo_e_texto">
-                <img class="logo" src="imagens/OPãoLogoRedux.svg" alt="Logo do Pão Game Studio">
+                <img class="logo" src="./imagens/O_Pao_Sem_Nome.png" alt="Logo do Pão Game Studio">
                 <h1 class="cabecalho_titulo">O Pão Game Studio</h1>
             </div>
 
@@ -27,13 +28,72 @@
                     <li class="navegacao_item"><a href="#">Home</a></li>
                     <li class="navegacao_item"><a href="#">Games</a></li>
                     <li class="navegacao_item"><a href="https://discord.gg/DKPPS36WHy">Join our Discord!</a></li>
-                    <li class="navegacao_item"><a href="#">Contact us</a></li>
+                    <li class="navegacao_item"><a href="mailto:opao.gamestudio@gmail.com">Contact us</a></li>
                 </ul>
             </nav>
 
         </header>
 
         <main>
+            <section class="games_page">
+                <!-- <h2 class="titulo">Games</h2> -->
+                <div id="carrossel">
+                    <div class="game_card">
+                        <div class="game_flag">
+                            <img class="game_icon" src="imagens/Growers.png" alt="Growers Icon">
+                            <h2 class="game_titulo">Growers</h2>
+                            <p class="game_desc">
+                                Growers it's a chaotic platform multiplayer PvP for up to 4 Players. You have to search the way to the light in different dark stages, avoid the various traps and eat your friends before they eat you!
+                            </p>
+                            <p class="game_desc_mobile">
+                                Growers it's a chaotic platform multiplayer PvP for up to 4 Players. Eat your friends before they eat you!
+                            </p>
+                            <button class="botao botao-game"><a href="#">See More</a></button>
+                        </div>
+                        
+                        <img class="game_img" src="imagens/Growers.GIF" alt="Growers Game Image">                    
+                    </div>
+    
+                    <div class="game_card">
+                        <div class="game_flag container">
+                            <img class="game_icon" src="imagens/MITG.png" alt="Mind The Gap Icon">
+                            <h2 class="game_titulo">Mind The Gap</h2> 
+                            <p class="game_desc container">It's a 2D side-scrolling game, with an high emphasis on exploration and puzzle-
+                                solving.The story revolves around figuring out what happened to the main character,
+                                    while simultaneously referencing the stages of grief throuought the game.
+                            </p>
+                            <p class="game_desc_mobile">
+                                It's a 2D side-scrolling horror game, with an high emphasis on exploration and puzzle-
+                                solving.
+                            </p>
+                            <button class="botao botao-game"><a href="#">See More</a></button>
+                        </div>
+    
+                        <img class="game_img" src="imagens/MindTheGap.gif" alt="Mind The Gap Game Image">
+    
+                                          
+                    </div>
+    
+                    <div class="game_card">
+                         <div class="game_flag">
+                            <h2 class="game_titulo">Sound Wizards</h2>
+                            <p class="game_desc">
+                                Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.Quem manda na minha terra sou euzis!Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Suco de cevadiss deixa as pessoas mais interessantis.
+    
+                                Interagi no mé, cursus quis, vehicula ac nisi.Quem num gosta di mé, boa gentis num é.Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Copo furadis é disculpa de bebadis, arcu quam euismod magna.
+                            </p>
+                            <p class="game_desc_mobile">
+                                Mussum Ipsum, cacilds vidis litro abertis.
+                            </p>
+                                <button class="botao botao-game"><a href="#">See More</a></button>
+                        </div>
+                        
+                        <img class="game_img" src="https://codaio.imgix.net/docs/5f8KPkVeWE/blobs/bl-IJ9uxv8Igg/af1f49ff760ae071b890304ae71fe055f23da85dd34a48a969511bcb895240eff201e1a0be4247dae909a3605448e6e83e191b810e4af76bf42645e37ab129265278a090fc3d2d95d750d35a3885a0657d2bc80cb3d1ab82f28b5633fc080220141bf0c4?auto=format%2Ccompress&fit=max" alt="Sound Wizards Game Image">  
+                    </div>
+
+                </div>
+            </section>
+            
             <section class="sobre container">
                 <div class="sobre_texto container">
                     <h2 class="titulo">About Us</h2>
@@ -42,58 +102,6 @@
                 <img class="sobre_imagem" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.startupdaily.net%2Fwp-content%2Fuploads%2F2013%2F12%2Fluxfon.com-18586.jpg%3Ffit%3D1920%252C1200%26ssl%3D1&f=1&nofb=1" alt="Linhas de Código">
             </section>
             
-            <section class="games_page">
-                <h2 class="titulo">Games</h2>
-                <div class="game container">
-                    <div class="game_flag container">
-                        <img class="game_icon" src="imagens/Growers.png" alt="Growers Icon">
-                        <h2 class="game_titulo">Growers</h2>
-                        <p class="game_desc">
-                            Growers it's a chaotic platform multiplayer PvP for up to 4 Players. You have to search the way to the light in different dark stages, avoid the various traps and eat your friends before they eat you!
-                        </p>
-                        <p class="game_desc_mobile">
-                            Growers it's a chaotic platform multiplayer PvP for up to 4 Players. Eat your friends before they eat you!
-                        </p>
-                        <button class="botao"><a href="#">See More</a></button>
-                    </div>
-                    
-                    <img class="game_img" src="imagens/Growers.GIF" alt="Growers Game Image">                    
-                </div>
-                <div class="game container">
-                    <img class="game_img" src="imagens/MindTheGap.gif" alt="Mind The Gap Game Image">
-
-                    <div class="game_flag container">
-                        <img class="game_icon" src="imagens/MITG.png" alt="Mind The Gap Icon">
-                        <h2 class="game_titulo">Mind The Gap</h2> 
-                        <p class="game_desc container">It's a 2D side-scrolling game, with an high emphasis on exploration and puzzle-
-                            solving.The story revolves around figuring out what happened to the main character,
-                                while simultaneously referencing the stages of grief throuought the game.
-                        </p>
-                        <p class="game_desc_mobile">
-                            It's a 2D side-scrolling horror game, with an high emphasis on exploration and puzzle-
-                            solving.
-                        </p>
-                        <button class="botao"><a href="#">See More</a></button>
-                    </div>
-                                      
-                </div>
-                <div class="game container">
-                     <div class="game_flag container">
-                        <h2 class="game_titulo">Sound Wizards</h2>
-                        <p class="game_desc">
-                            Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.Quem manda na minha terra sou euzis!Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Suco de cevadiss deixa as pessoas mais interessantis.
-
-                            Interagi no mé, cursus quis, vehicula ac nisi.Quem num gosta di mé, boa gentis num é.Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Copo furadis é disculpa de bebadis, arcu quam euismod magna.
-                        </p>
-                        <p class="game_desc_mobile">
-                            Mussum Ipsum, cacilds vidis litro abertis.
-                        </p>
-                            <button class="botao"><a href="#">See More</a></button>
-                    </div>
-                    
-                    <img class="game_img" src="https://codaio.imgix.net/docs/5f8KPkVeWE/blobs/bl-IJ9uxv8Igg/af1f49ff760ae071b890304ae71fe055f23da85dd34a48a969511bcb895240eff201e1a0be4247dae909a3605448e6e83e191b810e4af76bf42645e37ab129265278a090fc3d2d95d750d35a3885a0657d2bc80cb3d1ab82f28b5633fc080220141bf0c4?auto=format%2Ccompress&fit=max" alt="Sound Wizards Game Image">  
-                </div>
-            </section>
 
             <section class="time ">
                 <h2 class="titulo">Our Team</h2>
@@ -149,6 +157,7 @@
             </nav>
             
         </footer>
+        <script src="./Site/scripts/carrossel.js"></script>
     </body>
   
 </html>
