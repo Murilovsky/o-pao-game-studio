@@ -12,4 +12,4 @@ function RodaCarrossel(){
     carrossel.style.transform = `translateX(${(-idPagina * carrossel.clientWidth)}px)`
 }
 
-setInterval(RodaCarrossel,5000)
+setInterval(RodaCarrossel,5700)

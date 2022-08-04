@@ -1,5 +1,5 @@
 .logo_e_texto{
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     align-items: center;
 }
@@ -9,7 +9,6 @@
 }
 
 .cabecalho{
-    margin-bottom: 1rem;
     width: 100%;
     display: flex;
     background-color: var(--cinza-pao);
@@ -19,13 +18,14 @@
     justify-content: space-evenly;
 
     box-sizing: border-box;
+    box-shadow: 5px 0px 10px 5px rgba(0,0,0,0.3);
 }
 .cabecalho_titulo{
     font-family: var(--roboto);
     padding-top: 1rem;
     margin-left: 1rem;
     display: inline;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--amarelo-forte);
 }
@@ -50,7 +50,7 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1rem;
-    margin:1rem;
+    margin:0.5rem 1rem;
     color: var(--amarelo-forte);
     transition: all 100ms;
 }

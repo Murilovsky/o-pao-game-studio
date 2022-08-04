@@ -1,6 +1,16 @@
 .games_page{
-    padding-top: 75px;
     color: white;
+}
+.arrow{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.carrossel_wrapper{
+    overflow-x: auto;
+    overflow: hidden;
+    
 }
 #carrossel{
     display: flex;
@@ -9,17 +19,20 @@
 }
 .game_card{
     min-width: 100vw;
-    max-height: 80vh;
+    height: 75vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: black;
 }
 .game_desc{
-    width: 60%;
+    width: 40%;
+    margin: 0 20px;
     color: white;
     display: none;
     font-weight: 300;
-    /* margin-bottom: 1rem; */
+    padding: auto;
+
 }
 .game_desc_mobile{
     font-weight: 300;
@@ -28,14 +41,17 @@
 .game_flag{
     z-index: 1;
     position: absolute;
-    margin: auto 0;
-    width: 70%;
+    bottom: 0px;
+    padding: 40px 0 40px 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
 }
 .game_icon{
     max-width: 100px;
+    max-height: 100px;
 }
 .game_titulo{
     margin: 1rem;
@@ -47,20 +63,13 @@
     z-index: 0;
     display: inline-block;
     width: 100vw;
-    opacity: 30%;
+    opacity: 50%;
 }
 @media screen and (min-width:768px){
-
     .game_img{
         width: 100%;
     }
-    /* .game_icon{
-        display: inline;
-        width: 15%;
-    } */
-    .game_flag{
-        margin-top: 2rem;
-    }
+
     .game_desc{
         display: block;
     }
@@ -71,18 +80,13 @@
 }
 
 @media screen and (min-width:1024px) {
-    /* .games_page{
+    .games_page{
         padding-top:70px ;
-    } */
+    }
     .game_desc{
         font-size: 1.5rem;
     }
     .game_img{
         opacity: 100%;
     }
-    /* .game_flag{
-        position: relative;
-        margin: auto 0;
-        width: 70%;
-    } */
 }

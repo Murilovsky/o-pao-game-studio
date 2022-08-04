@@ -1,24 +1,30 @@
 .rodape{
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: var(--cinza-pao);
 }
 .rodape_img{
+    display: none;
     margin: 1rem;
-    width: 20%;
+    width: 60px;
 }
 .navegacao_item_rodape{
     font-family: var(--roboto);
     color: rgba(255, 255, 255, 0.5) ;
-    margin: 1rem;
+    margin: 1rem 0.25rem;
     font-size: 1rem;
 }
 .copyright{
     font-family: var(--roboto);
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: inline;
     color: rgba(255, 255, 255, 0.5) ;
     font-weight: 300;
+}
+@media screen and (min-width:768px) {
+    .rodape_img{
+        display: inline;
+    }
 }
