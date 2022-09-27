@@ -39,10 +39,11 @@
 .social_media{
     padding: 10%;
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-around;
 }
 .social_icon{
-    width: 10px;
+    scale:0.7;
     filter: invert(100%);
 }
 

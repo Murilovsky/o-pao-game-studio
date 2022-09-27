@@ -19,6 +19,9 @@ body{
 em{
     font-weight: 700;
 }
+.scroll::-webkit-scrollbar{
+    display:none;
+}
 .botao{
     font-family: var(--roboto);
     font-size: 1.25rem;
